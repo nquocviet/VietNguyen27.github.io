@@ -5,11 +5,14 @@
     "vietnamese": "Tiếng Việt"
   },
   "chooseLevel": "Chọn độ khó:",
+  "changeOptions": "Thay đổi tùy chọn",
   "levels": {
     "easy": "Dễ",
     "medium": "Trung bình",
     "hard": "Khó"
   },
+  "correctWord": "Từ chính xác:",
+  "meaning": "Nghĩa tiếng Anh:",
   "confirm": "Xác nhận",
   "title": "Trò chơi treo cổ",
   "content": "Đoán từ đã bị giấu - Nhập từng chữ cái",

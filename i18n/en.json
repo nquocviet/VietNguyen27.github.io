@@ -5,11 +5,14 @@
     "vietnamese": "Vietnamese"
   },
   "chooseLevel": "Choose difficulty:",
+  "changeOptions": "Change Options",
   "levels": {
     "easy": "Easy",
     "medium": "Medium",
     "hard": "Hard"
   },
+  "correctWord": "Correct word:",
+  "meaning": "Meaning in Vietnamese:",
   "confirm": "Confirm",
   "title": "Hangman Game",
   "content": "Find the hidden word - Enter a letter",

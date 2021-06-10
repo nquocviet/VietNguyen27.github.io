@@ -23,6 +23,24 @@ h1 {
   letter-spacing: 1px;
 }
 
+.btn {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #2980b9;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #34495e;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #34495e;
+}
+
 .choose-language {
   position: fixed;
   z-index: 3;
@@ -105,22 +123,16 @@ h1 {
 }
 
 .choose-language .btn-group button {
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #2980b9;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 4px 4px 0 #34495e;
-  outline: none;
-  padding: 0.5rem 1rem;
-  font-size: 16px;
-  transition: all 0.15s ease-in-out;
   text-transform: capitalize;
 }
 
-.choose-language .btn-group button:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #34495e;
+.widget-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 35px;
 }
 
 .hangman-container {
@@ -215,6 +227,7 @@ h1 {
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 35px 25px;
   width: 450px;
+  border-radius: 6px;
 }
 
 .popup h2 {
@@ -222,22 +235,18 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.popup button {
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #2980b9;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 3px 3px 0 #34495e;
-  outline: none;
-  padding: 0.5rem 1rem;
-  font-size: 16px;
-  transition: all 0.15s ease-in-out;
+.popup .meaning-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
 }
 
-.popup button:active {
-  transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0 #34495e;
+.popup .meaning-item span {
+  color: #f7b100;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -2px;
 }
 
 .notification-container {
@@ -247,6 +256,8 @@ h1 {
   margin-top: 16px;
   position: absolute;
   bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -255,7 +266,7 @@ h1 {
 }
 
 .notification-container.show {
-  transform: translateY(-100px);
+  transform: translate(-50%, -100px);
 }
 
 @keyframes showUp {
