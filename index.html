@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="choose-language">
+      <form>
+        <h2 data-i18n="chooseLanguage"></h2>
+        <div class="languages">
+          <div class="radio-custom">
+            <input type="radio" name="lang" id="en" value="en" checked />
+            <label for="en" data-i18n="language.english"></label>
+          </div>
+          <div class="radio-custom">
+            <input type="radio" name="lang" id="vi" value="vi" />
+            <label for="vi" data-i18n="language.vietnamese"></label>
+          </div>
+        </div>
+
+        <h2 data-i18n="chooseLevel"></h2>
+        <div class="levels">
+          <div class="radio-custom">
+            <input type="radio" name="level" id="easy" value="easy" checked />
+            <label for="easy" data-i18n="levels.easy"></label>
+          </div>
+          <div class="radio-custom">
+            <input type="radio" name="level" id="medium" value="medium" />
+            <label for="medium" data-i18n="levels.medium"></label>
+          </div>
+          <div class="radio-custom">
+            <input type="radio" name="level" id="hard" value="hard" />
+            <label for="hard" data-i18n="levels.hard"></label>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="submit" data-i18n="confirm"></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="hangman-container">
+      <h1 data-i18n="title"></h1>
+      <p data-i18n="content"></p>
+      <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+          <!-- Rod -->
+          <line x1="60" y1="20" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="50" />
+          <line x1="60" y1="20" x2="60" y2="230" />
+          <line x1="20" y1="230" x2="100" y2="230" />
+
+          <!-- Head -->
+          <circle cx="140" cy="70" r="20" class="figure-part" />
+          <!-- Body -->
+          <line x1="140" y1="90" x2="140" y2="140" class="figure-part" />
+          <!-- Arms -->
+          <line x1="120" y1="100" x2="140" y2="110" class="figure-part" />
+          <line x1="160" y1="100" x2="140" y2="110" class="figure-part" />
+          <!-- Legs -->
+          <line x1="120" y1="180" x2="140" y2="140" class="figure-part" />
+          <line x1="160" y1="180" x2="140" y2="140" class="figure-part" />
+        </svg>
+        <div class="wrong-letters-container">
+          <p data-i18n="wrongLetters"></p>
+          <div id="wrong-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+      </div>
+
+      <div class="popup-container" id="popup-container">
+        <div class="popup">
+          <h2 id="message-win" data-i18n="message.win"></h2>
+          <h2 id="message-lose" data-i18n="message.lose"></h2>
+          <button id="play-again" data-i18n="playAgain"></button>
+        </div>
+      </div>
+
+      <div class="notification-container" id="notification-container">
+        <p data-i18n="notif"></p>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

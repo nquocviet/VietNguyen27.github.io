@@ -1,0 +1,23 @@
+{
+  "chooseLanguage": "Choose a language:",
+  "language": {
+    "english": "English",
+    "vietnamese": "Vietnamese"
+  },
+  "chooseLevel": "Choose difficulty:",
+  "levels": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "confirm": "Confirm",
+  "title": "Hangman Game",
+  "content": "Find the hidden word - Enter a letter",
+  "wrongLetters": "Wrong letters",
+  "playAgain": "Play again",
+  "message": {
+    "win": "You have Win! Congratulations 🤗",
+    "lose": "Oh you lose, i feel bad for you! 🥺"
+  },
+  "notif": "You have already entered this letter"
+}

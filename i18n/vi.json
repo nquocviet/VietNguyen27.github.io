@@ -1,0 +1,23 @@
+{
+  "chooseLanguage": "Chọn ngôn ngữ:",
+  "language": {
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt"
+  },
+  "chooseLevel": "Chọn độ khó:",
+  "levels": {
+    "easy": "Dễ",
+    "medium": "Trung bình",
+    "hard": "Khó"
+  },
+  "confirm": "Xác nhận",
+  "title": "Trò chơi treo cổ",
+  "content": "Đoán từ đã bị giấu - Nhập từng chữ cái",
+  "wrongLetters": "Danh sách từ sai",
+  "playAgain": "Chơi lại",
+  "message": {
+    "win": "Thắng rồi! Chúc mừng nhé 🤗",
+    "lose": "Ơ thua rồi, bảo gà thì tự ái! 🥺"
+  },
+  "notif": "Đã nhập từ này rồi"
+}
