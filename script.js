@@ -187,6 +187,7 @@ const playNewGame = () => {
 
   displayWord();
   displayWrongWord();
+displayHint();
 };
 
 const convertWord = (title) => {
