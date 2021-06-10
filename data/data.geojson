@@ -1,0 +1,154 @@
+{
+  "animals": [
+    {
+      "en": "kitten",
+      "vi": "mèo con",
+      "level": "easy"
+    },
+    {
+      "en": "mole",
+      "vi": "chuột chũi",
+      "level": "easy"
+    },
+    {
+      "en": "skunk",
+      "vi": "chồn hôi",
+      "level": "easy"
+    },
+    {
+      "en": "ant",
+      "vi": "kiến",
+      "level": "easy"
+    },
+    {
+      "en": "bison",
+      "vi": "bò rừng",
+      "level": "easy"
+    },
+    {
+      "en": "otter",
+      "vi": "rái cá",
+      "level": "easy"
+    },
+    {
+      "en": "jaguar",
+      "vi": "báo đốm",
+      "level": "easy"
+    },
+    {
+      "en": "crow",
+      "vi": "con quạ",
+      "level": "easy"
+    },
+    {
+      "en": "ape",
+      "vi": "vượn",
+      "level": "easy"
+    },
+    {
+      "en": "sheep",
+      "vi": "cừu",
+      "level": "easy"
+    },
+    {
+      "en": "squirrel",
+      "vi": "con sóc",
+      "level": "medium"
+    },
+    {
+      "en": "baboon",
+      "vi": "khỉ đầu chó",
+      "level": "medium"
+    },
+    {
+      "en": "duckling",
+      "vi": "vịt con",
+      "level": "medium"
+    },
+    {
+      "en": "stingray",
+      "vi": "cá đuối",
+      "level": "medium"
+    },
+    {
+      "en": "gerbil",
+      "vi": "chuột nhảy",
+      "level": "medium"
+    },
+    {
+      "en": "inchworm",
+      "vi": "sâu bọ",
+      "level": "medium"
+    },
+    {
+      "en": "tree frog",
+      "vi": "ếch cây",
+      "level": "medium"
+    },
+    {
+      "en": "pelican",
+      "vi": "bồ nông",
+      "level": "medium"
+    },
+    {
+      "en": "moose",
+      "vi": "nai sừng tấm",
+      "level": "medium"
+    },
+    {
+      "en": "octopus",
+      "vi": "bạch tuộc",
+      "level": "medium"
+    },
+    {
+      "en": "humpback whale",
+      "vi": "cá voi lưng gù",
+      "level": "hard"
+    },
+    {
+      "en": "komodo dragon",
+      "vi": "rồng komodo",
+      "level": "hard"
+    },
+    {
+      "en": "albatross",
+      "vi": "chim hải âu",
+      "level": "hard"
+    },
+    {
+      "en": "saber tooth tiger",
+      "vi": "hổ răng kiếm",
+      "level": "hard"
+    },
+    {
+      "en": "narwhal",
+      "vi": "kỳ lân biển",
+      "level": "hard"
+    },
+    {
+      "en": "hippopotamus",
+      "vi": "con hà mã",
+      "level": "hard"
+    },
+    {
+      "en": "caterpillar",
+      "vi": "con sâu bướm",
+      "level": "hard"
+    },
+    {
+      "en": "flamingo",
+      "vi": "chim hồng hạc",
+      "level": "hard"
+    },
+    {
+      "en": "hammerhead shark",
+      "vi": "cá mập đầu búa",
+      "level": "hard"
+    },
+    {
+      "en": "leaf cutter ant",
+      "vi": "kiến cắt lá",
+      "level": "hard"
+    }
+  ]
+}

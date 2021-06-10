@@ -8,7 +8,7 @@ let translator = new Translator({
   filesLocation: '/i18n',
 });
 
-translator.load(localStorage.getItem('hangmanLang') || 'en');
+translator.load(sessionStorage.getItem('hangmanLang') || 'en');
 
 document.querySelector('form').addEventListener('click', function (evt) {
   if (evt.target.tagName === 'INPUT') {
@@ -16,16 +16,8 @@ document.querySelector('form').addEventListener('click', function (evt) {
   }
 });
 
-const words = [
-  'programming',
-  'developer',
-  'function',
-  'element',
-  'document',
-  'application',
-  'interface',
-];
-
+const language = sessionStorage.getItem('hangmanLang');
+const level = sessionStorage.getItem('hangmanLevel');
 const chooseLanguage = document.querySelector('.choose-language form');
 const hangmanContainer = document.querySelector('.hangman-container');
 const languages = document.querySelectorAll('input[name="lang"]');
@@ -37,28 +29,37 @@ const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const messageWin = document.getElementById('message-win');
 const messageLose = document.getElementById('message-lose');
+const correctWordEl = document.getElementById('correct-word');
+const wordMeaningEl = document.getElementById('word-meaning');
+const changeOptionsBtn = document.getElementById('change-options');
 
 const figureParts = document.querySelectorAll('.figure-part');
+let isStart = JSON.parse(sessionStorage.getItem('isStart')) || false;
 
-let selectedWord = words[Math.floor(Math.random() * words.length)];
-let languageSelected = 'en';
-let levelSelected = 'easy';
-let isStart = false;
-
-const correctLetters = [];
-const wrongLetters = [];
-
-window.addEventListener('load', function () {
-  const language = localStorage.getItem('hangmanLang');
-  const level = localStorage.getItem('hangmanLevel');
-
-  if (!language && !level) {
+window.addEventListener('DOMContentLoaded', function () {
+  if (!language || !level) {
     chooseLanguage.parentElement.classList.add('show');
   } else {
     hangmanContainer.classList.add('show');
     isStart = true;
   }
 });
+
+const fetchData = async () => {
+  const res = await axios.get('/data/data.geojson');
+  const words = res.data['animals'].filter((word) => word.level === level);
+
+  return words;
+};
+
+const words = await fetchData();
+
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+let languageSelected = 'en';
+let levelSelected = 'easy';
+
+const correctLetters = [];
+const wrongLetters = [];
 
 languages.forEach((language) => {
   language.addEventListener('change', function () {
@@ -75,17 +76,21 @@ levels.forEach((level) => {
 chooseLanguage.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  localStorage.setItem('hangmanLang', languageSelected);
-  localStorage.setItem('hangmanLevel', levelSelected);
+  sessionStorage.setItem('hangmanLang', languageSelected);
+  sessionStorage.setItem('hangmanLevel', levelSelected);
+  sessionStorage.setItem('isStart', true);
 
   isStart = true;
   this.parentElement.classList.remove('show');
   hangmanContainer.classList.add('show');
+  location.reload();
 });
 
 const displayWord = () => {
+  const wordDisplay = selectedWord[language];
+
   wordEl.innerHTML = `
-    ${selectedWord
+    ${convertWord(wordDisplay)
       .split('')
       .map((letter) => {
         if (letter === ' ') {
@@ -101,7 +106,7 @@ const displayWord = () => {
       .join('')}
   `;
 
-  const hiddenWord = selectedWord
+  const hiddenWord = convertWord(wordDisplay)
     .split('')
     .filter((char) => char !== ' ')
     .join('');
@@ -109,24 +114,20 @@ const displayWord = () => {
   const innerWord = wordEl.innerText.replace(/\n/g, '');
 
   if (innerWord === hiddenWord) {
-    messageWin.style.display = 'block';
-    messageLose.style.display = 'none';
-    popup.classList.add('show');
+    showPopup(true);
   }
 };
 
 const displayWrongWord = () => {
   if (wrongLetters.length === figureParts.length) {
-    messageLose.style.display = 'block';
-    messageWin.style.display = 'none';
-    popup.classList.add('show');
+    showPopup(false);
   }
 
   wrongLettersEl.innerHTML = `
-          <span>
-          ${wrongLetters.map((letter) => ` ${letter}`)}
-          </span>
-        `;
+    <span>
+    ${wrongLetters.map((letter) => ` ${letter}`)}
+    </span>
+  `;
 
   figureParts.forEach((part, index) => {
     const errors = wrongLetters.length;
@@ -137,6 +138,17 @@ const displayWrongWord = () => {
       part.style.display = 'none';
     }
   });
+};
+
+const showPopup = (winning) => {
+  const correctWord = selectedWord[language];
+  const wordMeaning = selectedWord[language === 'en' ? 'vi' : 'en'];
+  correctWordEl.textContent = correctWord;
+  wordMeaningEl.textContent = wordMeaning;
+
+  messageLose.style.display = winning ? 'none' : 'block';
+  messageWin.style.display = winning ? 'block' : 'none';
+  popup.classList.add('show');
 };
 
 const showNotification = () => {
@@ -157,6 +169,20 @@ const playNewGame = () => {
   displayWrongWord();
 };
 
+const convertWord = (title) => {
+  const newStr = title
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D')
+    .replace(/%/g, '')
+    .replace(/-/g, '')
+    .replace(/[^a-zA-Z 0-9]+/g, '')
+    .replace(/\s+/g, ' ');
+  return newStr;
+};
+
 window.addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
     playNewGame();
@@ -165,8 +191,9 @@ window.addEventListener('keydown', (e) => {
   if (wrongLetters.length !== figureParts.length && isStart) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {
       const letter = e.key;
+      const wordDisplay = selectedWord[language];
 
-      if (selectedWord.includes(letter)) {
+      if (convertWord(wordDisplay).includes(letter)) {
         if (!correctLetters.includes(letter)) {
           correctLetters.push(letter);
 
@@ -191,5 +218,15 @@ playAgainBtn.addEventListener('click', function () {
   playNewGame();
 });
 
-displayWord();
-displayWrongWord();
+changeOptionsBtn.addEventListener('click', function () {
+  chooseLanguage.parentElement.classList.add('show');
+  sessionStorage.removeItem('hangmanLang');
+  sessionStorage.removeItem('hangmanLevel');
+  sessionStorage.removeItem('isStart');
+  location.reload();
+});
+
+if (isStart) {
+  displayWord();
+  displayWrongWord();
+}

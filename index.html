@@ -38,9 +38,19 @@
           </div>
         </div>
         <div class="btn-group">
-          <button type="submit" data-i18n="confirm"></button>
+          <button class="btn" type="submit" data-i18n="confirm"></button>
         </div>
       </form>
+    </div>
+
+    <div class="widget-container">
+      <div class="options-container">
+        <button
+          class="btn"
+          id="change-options"
+          data-i18n="changeOptions"
+        ></button>
+      </div>
     </div>
 
     <div class="hangman-container">
@@ -76,7 +86,17 @@
         <div class="popup">
           <h2 id="message-win" data-i18n="message.win"></h2>
           <h2 id="message-lose" data-i18n="message.lose"></h2>
-          <button id="play-again" data-i18n="playAgain"></button>
+          <div class="meaning">
+            <div class="meaning-item">
+              <p data-i18n="correctWord"></p>
+              <span id="correct-word"></span>
+            </div>
+            <div class="meaning-item">
+              <p data-i18n="meaning"></p>
+              <span id="word-meaning"></span>
+            </div>
+          </div>
+          <button class="btn" id="play-again" data-i18n="playAgain"></button>
         </div>
       </div>
 
@@ -85,6 +105,10 @@
       </div>
     </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="./script.js"></script>
   </body>
 </html>

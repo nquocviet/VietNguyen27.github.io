@@ -7,7 +7,7 @@ class Translator {
     this._cache = new Map();
 
     if (this._options.detectLanguage) {
-      this._options.defaultLanguage = localStorage.getItem('hangmanLang');
+      this._options.defaultLanguage = sessionStorage.getItem('hangmanLang');
     }
 
     if (
@@ -54,7 +54,7 @@ class Translator {
     document.documentElement.lang = lang;
 
     if (this._options.persist) {
-      localStorage.setItem('hangmanLang', lang);
+      sessionStorage.setItem('hangmanLang', lang);
     }
   }
 
