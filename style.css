@@ -206,8 +206,12 @@ h1 {
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 30px 0 0;
+padding: 30px 0 10px;
 font-size: 18px;
+}
+
+.hint span {
+margin-right: 5px;
 }
 
 .hint #hint {
