@@ -288,15 +288,15 @@ const countdownTimer = setInterval(function () {
 }, 1000);
 
 window.addEventListener('keydown', (e) => {
-  gameStart = true;
-  secondContainer.style.animationName = 'rotate';
-
   if (e.keyCode === 13) {
     playNewGame();
   }
 
   if (wrongLetters.length !== figureParts.length && isStart) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {
+      gameStart = true;
+      secondContainer.style.animationName = 'rotate';
+
       const letter = e.key;
       const wordDisplay = selectedWord[language];
 
