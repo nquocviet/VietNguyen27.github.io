@@ -1,4 +1,4 @@
-{
+﻿{
   "chooseLanguage": "Chọn ngôn ngữ:",
   "language": {
     "english": "Tiếng Anh",
@@ -11,6 +11,7 @@
     "medium": "Trung bình",
     "hard": "Khó"
   },
+"hint": "Gợi ý:",
   "correctWord": "Từ chính xác:",
   "meaning": "Nghĩa tiếng Anh:",
   "confirm": "Xác nhận",

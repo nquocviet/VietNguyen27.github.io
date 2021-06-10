@@ -1,4 +1,4 @@
-import Translator from './translator.js';
+﻿import Translator from './translator.js';
 
 let translator = new Translator({
   persist: false,
@@ -23,6 +23,7 @@ const hangmanContainer = document.querySelector('.hangman-container');
 const languages = document.querySelectorAll('input[name="lang"]');
 const levels = document.querySelectorAll('input[name="level"]');
 const wordEl = document.getElementById('word');
+const hintEl = document.getElementById('hint');
 const wrongLettersEl = document.getElementById('wrong-letters');
 const playAgainBtn = document.getElementById('play-again');
 const popup = document.getElementById('popup-container');
@@ -154,6 +155,11 @@ const displayWrongWord = () => {
   });
 };
 
+const displayHint = () => {
+const hintDisplay = selectedWord[language === 'en' ? 'hintEn' : 'hintVi'];
+hintEl.textContent = hintDisplay;
+};
+
 const showPopup = (winning) => {
   const correctWord = selectedWord[language];
   const wordMeaning = selectedWord[language === 'en' ? 'vi' : 'en'];
@@ -240,4 +246,5 @@ changeOptionsBtn.addEventListener('click', function () {
 if (isStart) {
   displayWord();
   displayWrongWord();
+displayHint();
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "chooseLanguage": "Choose a language:",
   "language": {
     "english": "English",
@@ -11,6 +11,7 @@
     "medium": "Medium",
     "hard": "Hard"
   },
+"hint": "Hint:",
   "correctWord": "Correct word:",
   "meaning": "Meaning in Vietnamese:",
   "confirm": "Confirm",

@@ -1,304 +1,304 @@
-{
+﻿{
   "animals": [
     {
       "en": "kitten",
       "vi": "mèo con",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "mole",
       "vi": "chuột chũi",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "skunk",
       "vi": "chồn hôi",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "ant",
       "vi": "kiến",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "bison",
       "vi": "bò rừng",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "otter",
       "vi": "rái cá",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "jaguar",
       "vi": "báo đốm",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "crow",
       "vi": "con quạ",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "ape",
       "vi": "vượn",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "sheep",
       "vi": "cừu",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "pony",
       "vi": "ngựa con",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "horse",
       "vi": "ngựa",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "goat",
       "vi": "con dê",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "bear",
       "vi": "con gấu",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "toad",
       "vi": "con cóc",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "carp",
       "vi": "cá chép",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "beaver",
       "vi": "hải ly",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "zebra",
       "vi": "ngựa vằn",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "monkey",
       "vi": "con khỉ",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "shark",
       "vi": "cá mập",
-      "level": "easy"
+      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "water buffalo",
       "vi": "trâu nước",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "oyster",
       "vi": "con hàu",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "swordfish",
       "vi": "cá kiếm",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "macaw",
       "vi": "vẹt đuôi dài",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "eagle",
       "vi": "đại bàng",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "jackal",
       "vi": "chó rừng",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "ladybug",
       "vi": "bọ rùa",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "lobster",
       "vi": "tôm hùm",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "dove",
       "vi": "chim bồ câu",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "sea lion",
       "vi": "sư tử biển",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "squirrel",
       "vi": "con sóc",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "baboon",
       "vi": "khỉ đầu chó",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "duckling",
       "vi": "vịt con",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "stingray",
       "vi": "cá đuối",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "gerbil",
       "vi": "chuột nhảy",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "inchworm",
       "vi": "sâu bọ",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "tree frog",
       "vi": "ếch cây",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "pelican",
       "vi": "bồ nông",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "moose",
       "vi": "nai sừng tấm",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "octopus",
       "vi": "bạch tuộc",
-      "level": "medium"
+      "level": "medium", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "humpback whale",
       "vi": "cá voi lưng gù",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "komodo dragon",
       "vi": "rồng komodo",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "albatross",
       "vi": "chim hải âu",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "saber tooth tiger",
       "vi": "hổ răng kiếm",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "narwhal",
       "vi": "kỳ lân biển",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "hippopotamus",
       "vi": "con hà mã",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "caterpillar",
       "vi": "con sâu bướm",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "flamingo",
       "vi": "chim hồng hạc",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "hammerhead shark",
       "vi": "cá mập đầu búa",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "leaf cutter ant",
       "vi": "kiến cắt lá",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "flounder",
       "vi": "cá bơn",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "polar bear",
       "vi": "gấu Bắc Cực",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "sea cucumber",
       "vi": "con hải sâm",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "gazelle",
       "vi": "con linh dương",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "mallard",
       "vi": "con vịt trời",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "bald eagle",
       "vi": "đại bàng hói",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "killer whale",
       "vi": "cá mập sát thủ",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "hummingbird",
       "vi": "con chim ruồi",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "rhinoceros",
       "vi": "con tê giác",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     },
     {
       "en": "earthworm",
       "vi": "con giun đất",
-      "level": "hard"
+      "level": "hard", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
     }
   ]
 }
