@@ -13,7 +13,7 @@
         <h2 data-i18n="chooseLanguage"></h2>
         <div class="languages">
           <div class="radio-custom">
-            <input type="radio" name="lang" id="en" value="en" checked />
+            <input type="radio" name="lang" id="en" value="en" />
             <label for="en" data-i18n="language.english"></label>
           </div>
           <div class="radio-custom">
@@ -25,7 +25,7 @@
         <h2 data-i18n="chooseLevel"></h2>
         <div class="levels">
           <div class="radio-custom">
-            <input type="radio" name="level" id="easy" value="easy" checked />
+            <input type="radio" name="level" id="easy" value="easy" />
             <label for="easy" data-i18n="levels.easy"></label>
           </div>
           <div class="radio-custom">
@@ -43,17 +43,16 @@
       </form>
     </div>
 
-    <div class="widget-container">
-      <div class="options-container">
-        <button
-          class="btn"
-          id="change-options"
-          data-i18n="changeOptions"
-        ></button>
-      </div>
-    </div>
-
     <div class="hangman-container">
+      <div class="widget-container">
+        <div class="options-container">
+          <button
+            class="btn"
+            id="change-options"
+            data-i18n="changeOptions"
+          ></button>
+        </div>
+      </div>
       <h1 data-i18n="title"></h1>
       <p data-i18n="content"></p>
       <div class="game-container">
