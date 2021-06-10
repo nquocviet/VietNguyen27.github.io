@@ -190,8 +190,73 @@ body {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 25px 35px;
+}
+
+.stopwatch-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stopwatch-container .stopwatch .second-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(60);
+}
+
+.stopwatch-container .stopwatch .second-container:after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 60%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #2980b9;
+  transform: translate(-50%, -50%);
+}
+
+.stopwatch-container .stopwatch {
+  position: relative;
+}
+
+.stopwatch-container .stopwatch .stopwatch-second:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.stopwatch-container .stopwatch .stopwatch-second:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 10px;
+  border-radius: 130% 130% 0 0;
+  background-color: #2980b9;
+  transform: translate(-50%, -100%);
+}
+
+.stopwatch-container .countdown {
+  margin-bottom: -5px;
+}
+
+.stopwatch-container .countdown span {
+  font-size: 24px;
 }
 
 .hangman-container {
@@ -218,7 +283,7 @@ body {
 .hangman-title h1 {
   text-transform: capitalize;
   font-weight: 500;
-  letter-spacing: 1px;
+  font-size: calc(1.5rem + 1vw);
 }
 
 .game-container {
@@ -375,6 +440,12 @@ body {
   }
 }
 
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 @media screen and (max-width: 576px) {
   .btn {
     padding: 0.4rem 0.6rem;
@@ -393,9 +464,16 @@ body {
     padding: 8px 12px;
   }
 
-  .hangman-container > h1,
+  .hangman-container {
+    margin-top: -20px;
+  }
+
   .hangman-container > p {
     text-align: center;
+  }
+
+  .hangman-title {
+    justify-content: center;
   }
 
   .game-container {

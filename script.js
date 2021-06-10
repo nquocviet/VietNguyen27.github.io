@@ -34,9 +34,16 @@ const messageLose = document.getElementById('message-lose');
 const correctWordEl = document.getElementById('correct-word');
 const wordMeaningEl = document.getElementById('word-meaning');
 const changeOptionsBtn = document.getElementById('change-options');
+const countdownMinute = document.getElementById('countdown-minute');
+const countdownSecond = document.getElementById('countdown-second');
+const secondContainer = document.querySelector('.second-container');
+const stopwatchSecond = document.querySelector('.stopwatch-second');
+let countdown = 120 * 1000;
+let secondCount = 2;
 
 const figureParts = document.querySelectorAll('.figure-part');
 let isStart = JSON.parse(sessionStorage.getItem('isStart')) || false;
+let gameStart = false;
 
 const convertTopic = (topic) => {
   switch (topic) {
@@ -229,6 +236,8 @@ const showPopup = (winning) => {
   messageLose.style.display = winning ? 'none' : 'block';
   messageWin.style.display = winning ? 'block' : 'none';
   popup.classList.add('show');
+  gameStart = false;
+  secondContainer.style.animationName = '';
 };
 
 const showNotification = () => {
@@ -244,13 +253,44 @@ const playNewGame = () => {
   selectedWord = words[Math.floor(Math.random() * words.length)];
   correctLetters.splice(0);
   wrongLetters.splice(0);
+  countdown = 120 * 1000;
+  secondCount = 0;
+  countdownMinute.textContent = '02';
+  countdownSecond.textContent = '00';
+  gameStart = false;
+  secondContainer.style.animationName = '';
 
   displayWord();
   displayWrongWord();
   displayHint();
 };
 
+const countdownTimer = setInterval(function () {
+  if (!gameStart) {
+    return;
+  }
+
+  secondCount += 1;
+  countdown -= 1000;
+
+  const minute = Math.floor((countdown % (1000 * 60 * 60)) / (1000 * 60));
+  const second = Math.floor((countdown % (1000 * 60)) / 1000);
+
+  countdownMinute.textContent = minute >= 10 ? minute : `0${minute}`;
+  countdownSecond.textContent = second >= 10 ? second : `0${second}`;
+
+  stopwatchSecond.style.transform = `rotateZ(${secondCount * 6}deg)`;
+
+  if (countdown === 0) {
+    clearInterval(countdownTimer);
+    showPopup(false);
+  }
+}, 1000);
+
 window.addEventListener('keydown', (e) => {
+  gameStart = true;
+  secondContainer.style.animationName = 'rotate';
+
   if (e.keyCode === 13) {
     playNewGame();
   }
