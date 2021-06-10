@@ -36,7 +36,7 @@ body {
 
 .choose-language {
   position: fixed;
-  z-index: 3;
+  z-index: 100;
   inset: 0;
   background: linear-gradient(to bottom, #2980b9, #34495e);
   display: none;
@@ -365,6 +365,7 @@ body {
 .popup-container {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
+  z-index: 99;
   inset: 0;
   justify-content: center;
   align-items: center;
