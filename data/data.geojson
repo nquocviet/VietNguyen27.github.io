@@ -3,302 +3,458 @@
     {
       "en": "kitten",
       "vi": "mèo con",
-      "level": "easy", "hintVi": "Nuôi trong nhà", "hintEn": "Raised in the house"
+      "hintVi": "Nuôi trong nhà",
+      "hintEn": "Raised in the house"
     },
     {
       "en": "mole",
       "vi": "chuột chũi",
-      "level": "easy", "hintVi": "Bộ gặm nhấm", "hintEn": "Rodent set"
+      "hintVi": "Bộ gặm nhấm",
+      "hintEn": "Rodent set"
     },
     {
       "en": "skunk",
       "vi": "chồn hôi",
-      "level": "easy", "hintVi": "Sống về đêm, hôi", "hintEn": "Nightlife, smelly"
+      "hintVi": "Sống về đêm, hôi",
+      "hintEn": "Nightlife, smelly"
     },
     {
       "en": "ant",
       "vi": "kiến",
-      "level": "easy", "hintVi": "Côn trùng", "hintEn": "Insect"
+      "hintVi": "Côn trùng",
+      "hintEn": "Insect"
     },
     {
       "en": "gaur",
       "vi": "bò tót",
-      "level": "easy", "hintVi": "To, chiến", "hintEn": "Big, brutal"
+      "hintVi": "To, chiến",
+      "hintEn": "Big, brutal"
     },
     {
       "en": "otter",
       "vi": "rái cá",
-      "level": "easy", "hintVi": "Lưỡng cư, thuộc họ chồn", "hintEn": "Amphibians, mustelidae"
+      "hintVi": "Lưỡng cư, thuộc họ chồn",
+      "hintEn": "Amphibians, mustelidae"
     },
     {
       "en": "jaguar",
       "vi": "báo đốm",
-      "level": "easy", "hintVi": "Động vật ăn thịt, hoang dã", "hintEn": "Carnivore, wild"
+      "hintVi": "Động vật ăn thịt, hoang dã",
+      "hintEn": "Carnivore, wild"
     },
     {
       "en": "crow",
       "vi": "con quạ",
-      "level": "easy", "hintVi": "Thông minh, họ nhà chim", "hintEn": "Smart, bird"
+      "hintVi": "Thông minh, họ nhà chim",
+      "hintEn": "Smart, bird"
     },
     {
       "en": "ape",
       "vi": "vượn",
-      "level": "easy", "hintVi": "Sống bầy đàn, đi hai chân", "hintEn": "Live in groups, walk on two legs"
+      "hintVi": "Sống bầy đàn, đi hai chân",
+      "hintEn": "Live in groups, walk on two legs"
     },
     {
       "en": "sheep",
       "vi": "cừu",
-      "level": "easy", "hintVi": "Động vật có vú, có lông", "hintEn": "Mammal, hairy"
+      "hintVi": "Động vật có vú, có lông",
+      "hintEn": "Mammal, hairy"
     },
     {
       "en": "horse",
       "vi": "ngựa",
-      "level": "easy", "hintVi": "Chạy nhanh", "hintEn": "Run fast"
+      "hintVi": "Chạy nhanh",
+      "hintEn": "Run fast"
     },
     {
       "en": "bee",
       "vi": "con ong",
-      "level": "easy", "hintVi": "Côn trùng, sống theo đàn", "hintEn": "Insect, live in groups"
+      "hintVi": "Côn trùng, sống theo đàn",
+      "hintEn": "Insect, live in groups"
     },
     {
       "en": "goat",
       "vi": "con dê",
-      "level": "easy", "hintVi": "Động vật có vú, có râu", "hintEn": "Mammal, bearded"
+      "hintVi": "Động vật có vú, có râu",
+      "hintEn": "Mammal, bearded"
     },
     {
       "en": "bear",
       "vi": "con gấu",
-      "level": "easy", "hintVi": "Hung dữ, mập", "hintEn": "Brutal, fat"
+      "hintVi": "Hung dữ, mập",
+      "hintEn": "Brutal, fat"
     },
     {
       "en": "toad",
       "vi": "con cóc",
-      "level": "easy", "hintVi": "Sống trên bờ lẫn dưới nước, thích mưa", "hintEn": "Live both on land and in water, loves rain"
+      "hintVi": "Sống trên bờ lẫn dưới nước, thích mưa",
+      "hintEn": "Live both on land and in water, loves rain"
     },
     {
       "en": "carp",
       "vi": "cá chép",
-      "level": "easy", "hintVi": "Sống dưới nước ngọt", "hintEn": "Live in freshwater"
+      "hintVi": "Sống dưới nước ngọt",
+      "hintEn": "Live in freshwater"
     },
     {
       "en": "beaver",
       "vi": "hải ly",
-      "level": "easy", "hintVi": "Động vật ăn cỏ, chân có màng", "hintEn": "Herbivores, webbed feet"
+      "hintVi": "Động vật ăn cỏ, chân có màng",
+      "hintEn": "Herbivores, webbed feet"
     },
     {
       "en": "zebra",
       "vi": "ngựa vằn",
-      "level": "easy", "hintVi": "Sống ở Châu Phi", "hintEn": "Live in Africa"
+      "hintVi": "Sống ở Châu Phi",
+      "hintEn": "Live in Africa"
     },
     {
       "en": "monkey",
       "vi": "con khỉ",
-      "level": "easy", "hintVi": "Thông minh, đi bằng hai chân", "hintEn": "Smart, walking on two legs"
+      "hintVi": "Thông minh, đi bằng hai chân",
+      "hintEn": "Smart, walking on two legs"
     },
     {
       "en": "shark",
       "vi": "cá mập",
-      "level": "easy", "hintVi": "Sống dưới nước, hung dữ", "hintEn": "Live in water, brutal"
+      "hintVi": "Sống dưới nước, hung dữ",
+      "hintEn": "Live in water, brutal"
     },
     {
       "en": "water buffalo",
       "vi": "trâu nước",
-      "level": "medium", "hintVi": "To, đen", "hintEn": "Big, black"
+      "hintVi": "To, đen",
+      "hintEn": "Big, black"
     },
     {
       "en": "oyster",
       "vi": "con hàu",
-      "level": "medium", "hintVi": "Sống ở ven bờ biển", "hintEn": "Live by the seaside"
+      "hintVi": "Sống ở ven bờ biển",
+      "hintEn": "Live by the seaside"
     },
     {
       "en": "swordfish",
       "vi": "cá kiếm",
-      "level": "medium", "hintVi": "Sống ở nước mặn", "hintEn": "Live in salt water"
+      "hintVi": "Sống ở nước mặn",
+      "hintEn": "Live in salt water"
     },
     {
       "en": "macaw",
       "vi": "vẹt đuôi dài",
-      "level": "medium", "hintVi": "Nhại lại", "hintEn": "Parody, copy"
+      "hintVi": "Nhại lại",
+      "hintEn": "Parody, copy"
     },
     {
       "en": "eagle",
       "vi": "đại bàng",
-      "level": "medium", "hintVi": "Săn mồi, sống ở núi cao", "hintEn": "Hunting, living in the high mountains"
+      "hintVi": "Săn mồi, sống ở núi cao",
+      "hintEn": "Hunting, living in the high mountains"
     },
     {
       "en": "jackal",
       "vi": "chó rừng",
-      "level": "medium", "hintVi": "Hoang dã, bốn chân", "hintEn": "Wild, four-legged"
+      "hintVi": "Hoang dã, bốn chân",
+      "hintEn": "Wild, four-legged"
     },
     {
       "en": "ladybug",
       "vi": "bọ rùa",
-      "level": "medium", "hintVi": "Côn trùng, sặc sỡ", "hintEn": "Insect, colorful"
+      "hintVi": "Côn trùng, sặc sỡ",
+      "hintEn": "Insect, colorful"
     },
     {
       "en": "lobster",
       "vi": "tôm hùm",
-      "level": "medium", "hintVi": "Sống ở dưới biển", "hintEn": "Live in the sea"
+      "hintVi": "Sống ở dưới biển",
+      "hintEn": "Live in the sea"
     },
     {
       "en": "dove",
       "vi": "chim bồ câu",
-      "level": "medium", "hintVi": "Họ nhà chim, biểu tượng", "hintEn": "Bird, symbol"
+      "hintVi": "Họ nhà chim, biểu tượng",
+      "hintEn": "Bird, symbol"
     },
     {
       "en": "sea lion",
       "vi": "sư tử biển",
-      "level": "medium", "hintVi": "Mập, có râu", "hintEn": "Fat, bearded"
+      "hintVi": "Mập, có râu",
+      "hintEn": "Fat, bearded"
     },
     {
       "en": "squirrel",
       "vi": "con sóc",
-      "level": "medium", "hintVi": "Sống trong rừng, gặm nhấm", "hintEn": "Living in the forest, rodent set"
+      "hintVi": "Sống trong rừng, gặm nhấm",
+      "hintEn": "Living in the forest, rodent set"
     },
     {
       "en": "baboon",
       "vi": "khỉ đầu chó",
-      "level": "medium", "hintVi": "Động vật có vú, leo trèo", "hintEn": "Mammals, climbing"
+      "hintVi": "Động vật có vú, leo trèo",
+      "hintEn": "Mammals, climbing"
     },
     {
       "en": "duckling",
       "vi": "vịt con",
-      "level": "medium", "hintVi": "Chân có màng", "hintEn": "Webbed feet"
+      "hintVi": "Chân có màng",
+      "hintEn": "Webbed feet"
     },
     {
       "en": "stingray",
       "vi": "cá đuối",
-      "level": "medium", "hintVi": "Hình rẻ quạt", "hintEn": "Fan-shaped"
+      "hintVi": "Hình rẻ quạt",
+      "hintEn": "Fan-shaped"
     },
     {
       "en": "gerbil",
       "vi": "chuột nhảy",
-      "level": "medium", "hintVi": "Gặm nhấm, chân dài", "hintEn": "Rodent set, long legs"
+      "hintVi": "Gặm nhấm, chân dài",
+      "hintEn": "Rodent set, long legs"
     },
     {
       "en": "badger",
       "vi": "con lửng",
-      "level": "medium", "hintVi": "Giang hồ", "hintEn": "Gangster"
+      "hintVi": "Giang hồ",
+      "hintEn": "Gangster"
     },
     {
       "en": "tree frog",
       "vi": "ếch cây",
-      "level": "medium", "hintVi": "Chân có màng, sống trên cây", "hintEn": "Webbed feet, live on trees"
+      "hintVi": "Chân có màng, sống trên cây",
+      "hintEn": "Webbed feet, live on trees"
     },
     {
       "en": "pelican",
       "vi": "bồ nông",
-      "level": "medium", "hintVi": "Mồm to", "hintEn": "Big mouth"
+      "hintVi": "Mồm to",
+      "hintEn": "Big mouth"
     },
     {
       "en": "moose",
       "vi": "nai sừng tấm",
-      "level": "medium", "hintVi": "To, có sừng", "hintEn": "Big, horned"
+      "hintVi": "To, có sừng",
+      "hintEn": "Big, horned"
     },
     {
       "en": "octopus",
       "vi": "bạch tuộc",
-      "level": "medium", "hintVi": "Sống dưới biển, thông minh", "hintEn": "Live in the sea, smart"
+      "hintVi": "Sống dưới biển, thông minh",
+      "hintEn": "Live in the sea, smart"
     },
     {
       "en": "humpback whale",
       "vi": "cá voi lưng gù",
-      "level": "hard", "hintVi": "Sống dưới biển, to khổng lồ", "hintEn": "Live in the sea, huge"
+      "hintVi": "Sống dưới biển, to khổng lồ",
+      "hintEn": "Live in the sea, huge"
     },
     {
       "en": "komodo dragon",
       "vi": "rồng komodo",
-      "level": "hard", "hintVi": "Bò sát, sống trên đảo", "hintEn": "Reptile, living on the island"
+      "hintVi": "Bò sát, sống trên đảo",
+      "hintEn": "Reptile, living on the island"
     },
     {
       "en": "albatross",
       "vi": "chim hải âu",
-      "level": "hard", "hintVi": "Họ nhà chim", "hintEn": "Bird"
+      "hintVi": "Họ nhà chim",
+      "hintEn": "Bird"
     },
     {
       "en": "saber tooth tiger",
       "vi": "hổ răng kiếm",
-      "level": "hard", "hintVi": "Hung dữ, tuyệt chủng", "hintEn": "Brutal, extinction"
+      "hintVi": "Hung dữ, tuyệt chủng",
+      "hintEn": "Brutal, extinction"
     },
     {
       "en": "narwhal",
       "vi": "kỳ lân biển",
-      "level": "hard", "hintVi": "Sống ở biển, có sừng", "hintEn": "Lives in the sea, has horns"
+      "hintVi": "Sống ở biển, có sừng",
+      "hintEn": "Lives in the sea, has horns"
     },
     {
       "en": "hippopotamus",
       "vi": "con hà mã",
-      "level": "hard", "hintVi": "Mập", "hintEn": "Fat"
+      "hintVi": "Mập",
+      "hintEn": "Fat"
     },
     {
       "en": "caterpillar",
       "vi": "con sâu bướm",
-      "level": "hard", "hintVi": "Côn trùng, sặc sỡ", "hintEn": "Insect, colorful"
+      "hintVi": "Côn trùng, sặc sỡ",
+      "hintEn": "Insect, colorful"
     },
     {
       "en": "flamingo",
       "vi": "chim hồng hạc",
-      "level": "hard", "hintVi": "Họ nhà chim, chân dài", "hintEn": "Bird, long legs"
+      "hintVi": "Họ nhà chim, chân dài",
+      "hintEn": "Bird, long legs"
     },
     {
       "en": "hammerhead shark",
       "vi": "cá mập đầu búa",
-      "level": "hard", "hintVi": "Đầu to, sống dưới biển", "hintEn": "Big head, lives in the sea"
+      "hintVi": "Đầu to, sống dưới biển",
+      "hintEn": "Big head, lives in the sea"
     },
     {
       "en": "leaf cutter ant",
       "vi": "kiến xén lá",
-      "level": "hard", "hintVi": "Côn trùng, xây tổ", "hintEn": "Insect, nest"
+      "hintVi": "Côn trùng, xây tổ",
+      "hintEn": "Insect, nest"
     },
     {
       "en": "flounder",
       "vi": "cá bơn",
-      "level": "hard", "hintVi": "Sống dưới biển, thân bẹt", "hintEn": "Live in the sea, flat body"
+      "hintVi": "Sống dưới biển, thân bẹt",
+      "hintEn": "Live in the sea, flat body"
     },
     {
       "en": "polar bear",
       "vi": "gấu bắc cực",
-      "level": "hard", "hintVi": "Hung dữ, chỉ sống ở một vùng duy nhất", "hintEn": "Brutal, only living in one place"
+      "hintVi": "Hung dữ, chỉ sống ở một vùng duy nhất",
+      "hintEn": "Brutal, only living in one place"
     },
     {
       "en": "sea cucumber",
       "vi": "con hải sâm",
-      "level": "hard", "hintVi": "Sống dưới biển, thân dài", "hintEn": "Live in the sea, long body"
+      "hintVi": "Sống dưới biển, thân dài",
+      "hintEn": "Live in the sea, long body"
     },
     {
       "en": "gazelle",
       "vi": "con linh dương",
-      "level": "hard", "hintVi": "Động vật ăn cỏ, có sừng", "hintEn": "Herbivore, horned"
+      "hintVi": "Động vật ăn cỏ, có sừng",
+      "hintEn": "Herbivore, horned"
     },
     {
       "en": "mallard",
       "vi": "con vịt trời",
-      "level": "hard", "hintVi": "Chân có màng", "hintEn": "Webbed feet"
+      "hintVi": "Chân có màng",
+      "hintEn": "Webbed feet"
     },
     {
       "en": "bald eagle",
       "vi": "đại bàng hói",
-      "level": "hard", "hintVi": "Họ nhà chim, săn mồi", "hintEn": "Bird, hunting"
+      "hintVi": "Họ nhà chim, săn mồi",
+      "hintEn": "Bird, hunting"
     },
     {
       "en": "killer whale",
       "vi": "cá voi sát thủ",
-      "level": "hard", "hintVi": "Sống dưới biển, săn mồi đỉnh cao", "hintEn": "Live in the sea, peak hunting"
+      "hintVi": "Sống dưới biển, săn mồi đỉnh cao",
+      "hintEn": "Live in the sea, peak hunting"
     },
     {
       "en": "hummingbird",
       "vi": "con chim ruồi",
-      "level": "hard", "hintVi": "Chim, nhỏ", "hintEn": "Bird, small"
+      "hintVi": "Chim, nhỏ",
+      "hintEn": "Bird, small"
     },
     {
       "en": "rhinoceros",
       "vi": "con tê giác",
-      "level": "hard", "hintVi": "Động vật ăn cỏ, mập", "hintEn": "Herbivore, fat"
+      "hintVi": "Động vật ăn cỏ, mập",
+      "hintEn": "Herbivore, fat"
     },
     {
       "en": "earthworm",
       "vi": "con giun đất",
-      "level": "hard", "hintVi": "Thân trơn, có ích", "hintEn": "Smooth body, useful"
+      "hintVi": "Thân trơn, có ích",
+      "hintEn": "Smooth body, useful"
+    }
+  ],
+  "foods": [
+    {
+      "en": "kitten",
+      "vi": "mèo con",
+      "hintVi": "Đồ ăn nhà",
+      "hintEn": "Raised in the house"
+    },
+    {
+      "en": "mole",
+      "vi": "chuột chũi",
+      "hintVi": "Đồ ăn nhấm",
+      "hintEn": "Rodent set"
+    },
+    {
+      "en": "skunk",
+      "vi": "chồn hôi",
+      "hintVi": "Đồ ăn đêm, hôi",
+      "hintEn": "Nightlife, smelly"
+    },
+    {
+      "en": "ant",
+      "vi": "kiến",
+      "hintVi": "Đồ ăn",
+      "hintEn": "Insect"
+    },
+    {
+      "en": "gaur",
+      "vi": "bò tót",
+      "hintVi": "Đồ ăn chiến",
+      "hintEn": "Big, brutal"
+    }
+  ],
+  "nouns": [
+    {
+      "en": "kitten",
+      "vi": "mèo con",
+      "hintVi": "Danh từ nhà",
+      "hintEn": "Raised in the house"
+    },
+    {
+      "en": "mole",
+      "vi": "chuột chũi",
+      "hintVi": "Danh từ nhấm",
+      "hintEn": "Rodent set"
+    },
+    {
+      "en": "skunk",
+      "vi": "chồn hôi",
+      "hintVi": "Danh từ đêm, hôi",
+      "hintEn": "Nightlife, smelly"
+    },
+    {
+      "en": "ant",
+      "vi": "kiến",
+      "hintVi": "Danh từ",
+      "hintEn": "Insect"
+    },
+    {
+      "en": "gaur",
+      "vi": "bò tót",
+      "hintVi": "Danh từ chiến",
+      "hintEn": "Big, brutal"
+    }
+  ],
+  "characters": [
+    {
+      "en": "kitten",
+      "vi": "mèo con",
+      "hintVi": "Nhân vật nhà",
+      "hintEn": "Raised in the house"
+    },
+    {
+      "en": "mole",
+      "vi": "chuột chũi",
+      "hintVi": "Nhân vật nhấm",
+      "hintEn": "Rodent set"
+    },
+    {
+      "en": "skunk",
+      "vi": "chồn hôi",
+      "hintVi": "Nhân vật đêm, hôi",
+      "hintEn": "Nightlife, smelly"
+    },
+    {
+      "en": "ant",
+      "vi": "kiến",
+      "hintVi": "Nhân vật",
+      "hintEn": "Insect"
+    },
+    {
+      "en": "gaur",
+      "vi": "bò tót",
+      "hintVi": "Nhân vật chiến",
+      "hintEn": "Big, brutal"
     }
   ]
 }
