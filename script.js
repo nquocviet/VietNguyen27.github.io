@@ -17,11 +17,12 @@ document.querySelector('form').addEventListener('click', function (evt) {
 });
 
 const language = sessionStorage.getItem('hangmanLang');
-const level = sessionStorage.getItem('hangmanLevel');
+const topic = sessionStorage.getItem('hangmanTopic');
 const chooseLanguage = document.querySelector('.choose-language form');
 const hangmanContainer = document.querySelector('.hangman-container');
 const languages = document.querySelectorAll('input[name="lang"]');
-const levels = document.querySelectorAll('input[name="level"]');
+const customSelect = document.querySelector('.custom-select-wrapper');
+const topics = document.querySelectorAll('.custom-option');
 const wordEl = document.getElementById('word');
 const hintEl = document.getElementById('hint');
 const wrongLettersEl = document.getElementById('wrong-letters');
@@ -37,6 +38,37 @@ const changeOptionsBtn = document.getElementById('change-options');
 const figureParts = document.querySelectorAll('.figure-part');
 let isStart = JSON.parse(sessionStorage.getItem('isStart')) || false;
 
+const convertTopic = (topic) => {
+  switch (topic) {
+    case 'animals':
+      return languageSelected === 'en' ? 'Animals' : 'Động vật';
+    case 'foods':
+      return languageSelected === 'en'
+        ? 'Food and Cooking'
+        : 'Đồ ăn và dụng cụ bếp';
+    case 'nouns':
+      return languageSelected === 'en' ? 'Nouns' : 'Danh từ';
+    case 'characters':
+      return languageSelected === 'en' ? 'Characters' : 'Nhân vật';
+    default:
+      return;
+  }
+};
+
+const convertWord = (title) => {
+  const newStr = title
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D')
+    .replace(/%/g, '')
+    .replace(/-/g, '')
+    .replace(/[^a-zA-Z 0-9]+/g, '')
+    .replace(/\s+/g, ' ');
+  return newStr;
+};
+
 window.addEventListener('DOMContentLoaded', function () {
   if (!isStart) {
     chooseLanguage.parentElement.classList.add('show');
@@ -46,11 +78,23 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+window.addEventListener('click', function (e) {
+  const select = document.querySelector('.custom-select');
+  if (!select.contains(e.target)) {
+    select.classList.remove('open');
+  }
+});
+
+let languageSelected = language || 'en';
+let topicSelected = topic || 'animals';
+
+const correctLetters = [];
+const wrongLetters = [];
+
 const fetchData = async () => {
   const res = await axios.get('/data/data.geojson');
 
-  console.log(res.data);
-  const words = res.data['animals'].filter((word) => word.level === level);
+  const words = res.data[topicSelected];
 
   return words;
 };
@@ -58,11 +102,6 @@ const fetchData = async () => {
 const words = await fetchData();
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-let languageSelected = language || 'en';
-let levelSelected = level || 'easy';
-
-const correctLetters = [];
-const wrongLetters = [];
 
 languages.forEach((languageInput) => {
   if (language && languageInput.value === language) {
@@ -76,15 +115,36 @@ languages.forEach((languageInput) => {
   });
 });
 
-levels.forEach((levelInput) => {
-  if (level && levelInput.value === level) {
-    levelInput.checked = true;
-  } else if (levelInput.value === levelSelected) {
-    levelInput.checked = true;
+customSelect.addEventListener('click', function () {
+  this.querySelector('.custom-select').classList.toggle('open');
+});
+
+topics.forEach((topic) => {
+  if (topic.dataset.value === topicSelected) {
+    const optionSelected = topic
+      .closest('.custom-select')
+      .querySelector('.custom-select__trigger span');
+
+    topic.parentNode
+      .querySelector('.custom-option.selected')
+      .classList.remove('selected');
+    topic.classList.add('selected');
+    optionSelected.dataset.i18n = `topic.${topicSelected}`;
+    optionSelected.textContent = convertTopic(topic.dataset.value);
   }
 
-  levelInput.addEventListener('change', function () {
-    levelSelected = this.value;
+  topic.addEventListener('click', function () {
+    if (!this.classList.contains('selected')) {
+      topicSelected = this.dataset.value;
+
+      this.parentNode
+        .querySelector('.custom-option.selected')
+        .classList.remove('selected');
+      this.classList.add('selected');
+      this.closest('.custom-select').querySelector(
+        '.custom-select__trigger span'
+      ).textContent = this.textContent;
+    }
   });
 });
 
@@ -92,7 +152,7 @@ chooseLanguage.addEventListener('submit', function (e) {
   e.preventDefault();
 
   sessionStorage.setItem('hangmanLang', languageSelected);
-  sessionStorage.setItem('hangmanLevel', levelSelected);
+  sessionStorage.setItem('hangmanTopic', topicSelected);
   sessionStorage.setItem('isStart', true);
 
   isStart = true;
@@ -156,8 +216,8 @@ const displayWrongWord = () => {
 };
 
 const displayHint = () => {
-const hintDisplay = selectedWord[language === 'en' ? 'hintEn' : 'hintVi'];
-hintEl.textContent = hintDisplay;
+  const hintDisplay = selectedWord[language === 'en' ? 'hintEn' : 'hintVi'];
+  hintEl.textContent = hintDisplay;
 };
 
 const showPopup = (winning) => {
@@ -187,21 +247,7 @@ const playNewGame = () => {
 
   displayWord();
   displayWrongWord();
-displayHint();
-};
-
-const convertWord = (title) => {
-  const newStr = title
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/đ/g, 'd')
-    .replace(/Đ/g, 'D')
-    .replace(/%/g, '')
-    .replace(/-/g, '')
-    .replace(/[^a-zA-Z 0-9]+/g, '')
-    .replace(/\s+/g, ' ');
-  return newStr;
+  displayHint();
 };
 
 window.addEventListener('keydown', (e) => {
@@ -247,5 +293,5 @@ changeOptionsBtn.addEventListener('click', function () {
 if (isStart) {
   displayWord();
   displayWrongWord();
-displayHint();
+  displayHint();
 }

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman Game</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="choose-language">
@@ -22,21 +27,38 @@
           </div>
         </div>
 
-        <h2 data-i18n="chooseLevel"></h2>
-        <div class="levels">
-          <div class="radio-custom">
-            <input type="radio" name="level" id="easy" value="easy" />
-            <label for="easy" data-i18n="levels.easy"></label>
-          </div>
-          <div class="radio-custom">
-            <input type="radio" name="level" id="medium" value="medium" />
-            <label for="medium" data-i18n="levels.medium"></label>
-          </div>
-          <div class="radio-custom">
-            <input type="radio" name="level" id="hard" value="hard" />
-            <label for="hard" data-i18n="levels.hard"></label>
+        <h2 data-i18n="chooseTopic"></h2>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span data-i18n=""></span>
+              <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+              <span
+                class="custom-option selected"
+                data-value="animals"
+                data-i18n="topic.animals"
+              ></span>
+              <span
+                class="custom-option"
+                data-value="foods"
+                data-i18n="topic.foods"
+              ></span>
+              <span
+                class="custom-option"
+                data-value="nouns"
+                data-i18n="topic.nouns"
+              ></span>
+              <span
+                class="custom-option"
+                data-value="characters"
+                data-i18n="topic.characters"
+              ></span>
+            </div>
           </div>
         </div>
+
         <div class="btn-group">
           <button class="btn" type="submit" data-i18n="confirm"></button>
         </div>
@@ -45,15 +67,20 @@
 
     <div class="hangman-container">
       <div class="widget-container">
+        <div class="stopwatch-container"></div>
+
         <div class="options-container">
-          <button
-            class="btn"
-            id="change-options"
-            data-i18n="changeOptions"
-          ></button>
+          <button class="btn" id="change-options">
+            <span class="fas fa-cog"></span>
+            <span data-i18n="changeOptions"></span>
+          </button>
         </div>
       </div>
-      <h1 data-i18n="title"></h1>
+
+      <div class="hangman-title">
+        <span class="fas fa-puzzle-piece"></span>
+        <h1 data-i18n="title"></h1>
+      </div>
       <p data-i18n="content"></p>
       <div class="game-container">
         <svg height="250" width="200" class="figure-container">
@@ -79,10 +106,10 @@
           <div id="wrong-letters"></div>
         </div>
         <div class="word" id="word"></div>
-	<div class="hint">
-	<span data-i18n="hint"></span>
-	<p id="hint"></p>
-	</div>
+        <div class="hint">
+          <span data-i18n="hint"></span>
+          <p id="hint"></p>
+        </div>
       </div>
 
       <div class="popup-container" id="popup-container">

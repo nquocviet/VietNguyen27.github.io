@@ -4,24 +4,25 @@
     "english": "Tiếng Anh",
     "vietnamese": "Tiếng Việt"
   },
-  "chooseLevel": "Chọn độ khó:",
+  "chooseTopic": "Chọn chủ đề:",
   "changeOptions": "Thay đổi tùy chọn",
-  "levels": {
-    "easy": "Dễ",
-    "medium": "Trung bình",
-    "hard": "Khó"
+  "topic": {
+    "animals": "Động vật",
+    "foods": "Đồ ăn và dụng cụ bếp",
+    "nouns": "Danh từ",
+    "characters": "Nhân vật"
   },
-"hint": "Gợi ý:",
+  "hint": "Gợi ý:",
   "correctWord": "Từ chính xác:",
   "meaning": "Nghĩa tiếng Anh:",
   "confirm": "Xác nhận",
-  "title": "Trò chơi treo cổ",
+  "title": "Trò chơi đoán chữ",
   "content": "Đoán từ đã bị giấu - Nhập từng chữ cái",
   "wrongLetters": "Danh sách từ sai",
   "playAgain": "Chơi lại",
   "message": {
     "win": "Thắng rồi! Chúc mừng nhé 🤗",
-    "lose": "Ơ thua rồi, bảo gà thì tự ái! 🥺"
+    "lose": "Ơ thua rồi, bảo gà thì tự ái! 😢"
   },
-  "notif": "Đã nhập từ này rồi"
+  "notif": "Bạn đã nhập từ này rồi"
 }

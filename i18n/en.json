@@ -4,14 +4,15 @@
     "english": "English",
     "vietnamese": "Vietnamese"
   },
-  "chooseLevel": "Choose difficulty:",
+  "chooseTopic": "Choose topic:",
   "changeOptions": "Change Options",
-  "levels": {
-    "easy": "Easy",
-    "medium": "Medium",
-    "hard": "Hard"
+  "topic": {
+    "animals": "Animals",
+    "foods": "Food and Cooking",
+    "nouns": "Nouns",
+    "characters": "Characters"
   },
-"hint": "Hint:",
+  "hint": "Hint:",
   "correctWord": "Correct word:",
   "meaning": "Meaning in Vietnamese:",
   "confirm": "Confirm",
