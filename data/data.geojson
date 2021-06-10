@@ -51,6 +51,106 @@
       "level": "easy"
     },
     {
+      "en": "pony",
+      "vi": "ngựa con",
+      "level": "easy"
+    },
+    {
+      "en": "horse",
+      "vi": "ngựa",
+      "level": "easy"
+    },
+    {
+      "en": "goat",
+      "vi": "con dê",
+      "level": "easy"
+    },
+    {
+      "en": "bear",
+      "vi": "con gấu",
+      "level": "easy"
+    },
+    {
+      "en": "toad",
+      "vi": "con cóc",
+      "level": "easy"
+    },
+    {
+      "en": "carp",
+      "vi": "cá chép",
+      "level": "easy"
+    },
+    {
+      "en": "beaver",
+      "vi": "hải ly",
+      "level": "easy"
+    },
+    {
+      "en": "zebra",
+      "vi": "ngựa vằn",
+      "level": "easy"
+    },
+    {
+      "en": "monkey",
+      "vi": "con khỉ",
+      "level": "easy"
+    },
+    {
+      "en": "shark",
+      "vi": "cá mập",
+      "level": "easy"
+    },
+    {
+      "en": "water buffalo",
+      "vi": "trâu nước",
+      "level": "medium"
+    },
+    {
+      "en": "oyster",
+      "vi": "con hàu",
+      "level": "medium"
+    },
+    {
+      "en": "swordfish",
+      "vi": "cá kiếm",
+      "level": "medium"
+    },
+    {
+      "en": "macaw",
+      "vi": "vẹt đuôi dài",
+      "level": "medium"
+    },
+    {
+      "en": "eagle",
+      "vi": "đại bàng",
+      "level": "medium"
+    },
+    {
+      "en": "jackal",
+      "vi": "chó rừng",
+      "level": "medium"
+    },
+    {
+      "en": "ladybug",
+      "vi": "bọ rùa",
+      "level": "medium"
+    },
+    {
+      "en": "lobster",
+      "vi": "tôm hùm",
+      "level": "medium"
+    },
+    {
+      "en": "dove",
+      "vi": "chim bồ câu",
+      "level": "medium"
+    },
+    {
+      "en": "sea lion",
+      "vi": "sư tử biển",
+      "level": "medium"
+    },
+    {
       "en": "squirrel",
       "vi": "con sóc",
       "level": "medium"
@@ -148,6 +248,56 @@
     {
       "en": "leaf cutter ant",
       "vi": "kiến cắt lá",
+      "level": "hard"
+    },
+    {
+      "en": "flounder",
+      "vi": "cá bơn",
+      "level": "hard"
+    },
+    {
+      "en": "polar bear",
+      "vi": "gấu Bắc Cực",
+      "level": "hard"
+    },
+    {
+      "en": "sea cucumber",
+      "vi": "con hải sâm",
+      "level": "hard"
+    },
+    {
+      "en": "gazelle",
+      "vi": "con linh dương",
+      "level": "hard"
+    },
+    {
+      "en": "mallard",
+      "vi": "con vịt trời",
+      "level": "hard"
+    },
+    {
+      "en": "bald eagle",
+      "vi": "đại bàng hói",
+      "level": "hard"
+    },
+    {
+      "en": "killer whale",
+      "vi": "cá mập sát thủ",
+      "level": "hard"
+    },
+    {
+      "en": "hummingbird",
+      "vi": "con chim ruồi",
+      "level": "hard"
+    },
+    {
+      "en": "rhinoceros",
+      "vi": "con tê giác",
+      "level": "hard"
+    },
+    {
+      "en": "earthworm",
+      "vi": "con giun đất",
       "level": "hard"
     }
   ]

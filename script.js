@@ -37,7 +37,7 @@ const figureParts = document.querySelectorAll('.figure-part');
 let isStart = JSON.parse(sessionStorage.getItem('isStart')) || false;
 
 window.addEventListener('DOMContentLoaded', function () {
-  if (!language || !level) {
+  if (!isStart) {
     chooseLanguage.parentElement.classList.add('show');
   } else {
     hangmanContainer.classList.add('show');
@@ -47,6 +47,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
 const fetchData = async () => {
   const res = await axios.get('/data/data.geojson');
+
+  console.log(res.data);
   const words = res.data['animals'].filter((word) => word.level === level);
 
   return words;
@@ -55,20 +57,32 @@ const fetchData = async () => {
 const words = await fetchData();
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-let languageSelected = 'en';
-let levelSelected = 'easy';
+let languageSelected = language || 'en';
+let levelSelected = level || 'easy';
 
 const correctLetters = [];
 const wrongLetters = [];
 
-languages.forEach((language) => {
-  language.addEventListener('change', function () {
+languages.forEach((languageInput) => {
+  if (language && languageInput.value === language) {
+    languageInput.checked = true;
+  } else if (languageInput.value === languageSelected) {
+    languageInput.checked = true;
+  }
+
+  languageInput.addEventListener('change', function () {
     languageSelected = this.value;
   });
 });
 
-levels.forEach((level) => {
-  level.addEventListener('change', function () {
+levels.forEach((levelInput) => {
+  if (level && levelInput.value === level) {
+    levelInput.checked = true;
+  } else if (levelInput.value === levelSelected) {
+    levelInput.checked = true;
+  }
+
+  levelInput.addEventListener('change', function () {
     levelSelected = this.value;
   });
 });
@@ -220,10 +234,7 @@ playAgainBtn.addEventListener('click', function () {
 
 changeOptionsBtn.addEventListener('click', function () {
   chooseLanguage.parentElement.classList.add('show');
-  sessionStorage.removeItem('hangmanLang');
-  sessionStorage.removeItem('hangmanLevel');
   sessionStorage.removeItem('isStart');
-  location.reload();
 });
 
 if (isStart) {
