@@ -301,7 +301,7 @@ window.addEventListener('keydown', (e) => {
       secondContainer.style.animationName = 'rotate';
 
       const letter = e.key;
-      const wordDisplay = selectedWord[language];
+      const wordDisplay = selectedWord[languageSelected];
 
       if (convertWord(wordDisplay).includes(letter)) {
         if (!correctLetters.includes(letter)) {
