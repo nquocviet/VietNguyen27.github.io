@@ -106,7 +106,7 @@ const fetchData = async () => {
   return words;
 };
 
-const words = await fetchData();
+let words = await fetchData();
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
@@ -155,7 +155,7 @@ topics.forEach((topic) => {
   });
 });
 
-chooseLanguage.addEventListener('submit', function (e) {
+chooseLanguage.addEventListener('submit', async function (e) {
   e.preventDefault();
 
   sessionStorage.setItem('hangmanLang', languageSelected);
@@ -165,7 +165,9 @@ chooseLanguage.addEventListener('submit', function (e) {
   isStart = true;
   this.parentElement.classList.remove('show');
   hangmanContainer.classList.add('show');
-  location.reload();
+
+  words = await fetchData();
+  playNewGame();
 });
 
 const displayWord = () => {

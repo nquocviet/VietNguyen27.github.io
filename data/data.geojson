@@ -363,66 +363,606 @@
   ],
   "foods": [
     {
-      "en": "kitten",
-      "vi": "mèo con",
-      "hintVi": "Đồ ăn nhà",
-      "hintEn": "Raised in the house"
+      "en": "okra",
+      "vi": "đậu bắp",
+      "hintVi": "Đồ ăn, màu xanh lá",
+      "hintEn": "Food, green"
     },
     {
-      "en": "mole",
-      "vi": "chuột chũi",
-      "hintVi": "Đồ ăn nhấm",
-      "hintEn": "Rodent set"
+      "en": "cereal",
+      "vi": "ngũ cốc",
+      "hintVi": "Ăn sáng, làm từ hạt",
+      "hintEn": "Breakfast, made from nuts"
     },
     {
-      "en": "skunk",
-      "vi": "chồn hôi",
-      "hintVi": "Đồ ăn đêm, hôi",
-      "hintEn": "Nightlife, smelly"
+      "en": "sandwich",
+      "vi": "bánh mì sandwich",
+      "hintVi": "Ăn sáng",
+      "hintEn": "Breakfast"
     },
     {
-      "en": "ant",
-      "vi": "kiến",
-      "hintVi": "Đồ ăn",
-      "hintEn": "Insect"
+      "en": "can opener",
+      "vi": "đồ khui hộp",
+      "hintVi": "Dụng cụ, gia dụng tiện ích",
+      "hintEn": "Utilities tools and appliances"
     },
     {
-      "en": "gaur",
-      "vi": "bò tót",
-      "hintVi": "Đồ ăn chiến",
-      "hintEn": "Big, brutal"
+      "en": "orange",
+      "vi": "trái cam",
+      "hintVi": "Trái cây, tốt cho sức khỏe",
+      "hintEn": "Fruit, good for health"
+    },
+    {
+      "en": "griddle",
+      "vi": "vỉ nướng",
+      "hintVi": "Dụng cụ bếp, làm bằng sắt",
+      "hintEn": "Kitchen tools, made of iron"
+    },
+    {
+      "en": "radish",
+      "vi": "củ cải",
+      "hintVi": "Rau củ, ngọt",
+      "hintEn": "Vegetables, sweet"
+    },
+    {
+      "en": "cheese",
+      "vi": "phô mai",
+      "hintVi": "Làm từ sữa",
+      "hintEn": "Made from milk"
+    },
+    {
+      "en": "spaghetti",
+      "vi": "mì ống ý",
+      "hintVi": "Đồ ăn, dạng sợi",
+      "hintEn": "Food, fibrous"
+    },
+    {
+      "en": "sushi",
+      "vi": "sushi",
+      "hintVi": "Đồ ăn, cắt lát",
+      "hintEn": "Food, sliced"
+    },
+    {
+      "en": "cauliflower",
+      "vi": "súp lơ trắng",
+      "hintVi": "Rau củ, màu trắng",
+      "hintEn": "Vegetables, white"
+    },
+    {
+      "en": "sweet potato",
+      "vi": "Khoai lang",
+      "hintVi": "Rau củ, nhiều tinh bột",
+      "hintEn": "Vegetables, lots of starch"
+    },
+    {
+      "en": "salmon",
+      "vi": "cá hồi",
+      "hintVi": "Hải sản, thịt màu cam",
+      "hintEn": "Seafood, orange meat"
+    },
+    {
+      "en": "flour",
+      "vi": "bột mì",
+      "hintVi": "Làm từ ngũ cốc, đậu hoặc hạt",
+      "hintEn": "Made from grains, beans or nuts"
+    },
+    {
+      "en": "toast",
+      "vi": "bánh mì nướng",
+      "hintVi": "Ăn sáng, vỏ giòn",
+      "hintEn": "Breakfast, crispy"
+    },
+    {
+      "en": "pan fry",
+      "vi": "chảo rán",
+      "hintVi": "Dụng cụ bếp, hình tròn",
+      "hintEn": "Kitchen utensils, round shape"
+    },
+    {
+      "en": "chocolate chip",
+      "vi": "bánh quy socola",
+      "hintVi": "Đồ ăn vặt, màu nâu",
+      "hintEn": "Snacks, brown"
+    },
+    {
+      "en": "frozen yogurt",
+      "vi": "sữa chua đông lạnh",
+      "hintVi": "Lên men, ngọt, cứng",
+      "hintEn": "Fermented, sweet, hard"
+    },
+    {
+      "en": "cabbage",
+      "vi": "cải bắp",
+      "hintVi": "Rau củ, hình tròn",
+      "hintEn": "Vegetables, round shaped"
+    },
+    {
+      "en": "olive oil",
+      "vi": "dầu ô liu",
+      "hintVi": "Dùng trong nấu ăn",
+      "hintEn": "Use in cooking"
+    },
+    {
+      "en": "spoon",
+      "vi": "cái muỗng",
+      "hintVi": "Dụng cụ nhà bếp, bề mặt lõm",
+      "hintEn": "Kitchen tools, concave surface"
+    },
+    {
+      "en": "carrot",
+      "vi": "cà rốt",
+      "hintVi": "Rau củ, màu cam",
+      "hintEn": "Vegetables, orange"
+    },
+    {
+      "en": "honey",
+      "vi": "mật ong",
+      "hintVi": "Màu cam, ngọt",
+      "hintEn": "Orange, sweet"
+    },
+    {
+      "en": "grill",
+      "vi": "nướng",
+      "hintVi": "Hành động nấu ăn",
+      "hintEn": "Cooking action"
+    },
+    {
+      "en": "boiled egg",
+      "vi": "trứng luộc",
+      "hintVi": "Đồ ăn, nấu trong nước",
+      "hintEn": "Food, cooked in water"
+    },
+    {
+      "en": "cashew",
+      "vi": "hạt điều",
+      "hintVi": "Dinh dưỡng cao, màu nâu",
+      "hintEn": "High nutrition, brown"
+    },
+    {
+      "en": "wedding cake",
+      "vi": "bánh cưới",
+      "hintVi": "Ngọt, dùng trong dịp nhất định",
+      "hintEn": "Sweet, used on certain occasions"
+    },
+    {
+      "en": "corn",
+      "vi": "ngô",
+      "hintVi": "Thực phẩm, ngọt, màu vàng",
+      "hintEn": "Food, sweet, yellow"
+    },
+    {
+      "en": "sugar",
+      "vi": "đường",
+      "hintVi": "Dùng trong nấu ăn, ngọt, trắng",
+      "hintEn": "Use in cooking, sweet, white"
+    },
+    {
+      "en": "potato",
+      "vi": "khoai tây",
+      "hintVi": "Rau củ, màu nâu",
+      "hintEn": "Vegetables, brown"
+    },
+    {
+      "en": "sunflower seed",
+      "vi": "hạt hướng dương",
+      "hintVi": "Có thể dùng trong dịp Tết",
+      "hintEn": "Can be used during Tet holiday"
+    },
+    {
+      "en": "pineapple",
+      "vi": "trái thơm",
+      "hintVi": "Trái cây, màu vàng, có thể nấu canh",
+      "hintEn": "Fruit, yellow, can cook soup"
+    },
+    {
+      "en": "dumplings",
+      "vi": "bánh bao",
+      "hintVi": "Đồ ăn, tròn, màu trắng",
+      "hintEn": "Food, round shaped, white"
+    },
+    {
+      "en": "walnut",
+      "vi": "quả óc chó",
+      "hintVi": "Hạt, màu nâu, tốt cho sức khỏe",
+      "hintEn": "Nuts, brown, healthy"
+    },
+    {
+      "en": "blueberry",
+      "vi": "Việt quất",
+      "hintVi": "Trái cây, màu xanh đậm",
+      "hintEn": "Fruity, dark blue"
+    },
+    {
+      "en": "onion",
+      "vi": "hành tây",
+      "hintVi": "Thực vật, dùng trong nấu ăn, vỏ màu nâu",
+      "hintEn": "Vegetable, used in cooking, brown skin"
+    },
+    {
+      "en": "pork",
+      "vi": "thịt heo",
+      "hintVi": "Thực phẩm, phổ biến",
+      "hintEn": "Food, popular"
+    },
+    {
+      "en": "pepper",
+      "vi": "hạt tiêu",
+      "hintVi": "Gia vị, cay",
+      "hintEn": "Spices, spicy"
+    },
+    {
+      "en": "stomach",
+      "vi": "bao tử",
+      "hintVi": "Bộ phận động vật",
+      "hintEn": "Animal parts"
+    },
+    {
+      "en": "spring rolls",
+      "vi": "chả giò",
+      "hintVi": "Thực phẩm, chiên, tên gọi ở miền Bắc",
+      "hintEn": "Food, fried, name in North Vietnam"
+    },
+    {
+      "en": "microwave",
+      "vi": "lò vi sóng",
+      "hintVi": "Dụng cụ nhà bếp, hình hộp",
+      "hintEn": "Kitchen tools, box shape"
+    },
+    {
+      "en": "mustard",
+      "vi": "mù tạc",
+      "hintVi": "Gia vị, siêu cay",
+      "hintEn": "Spices, super spicy"
+    },
+    {
+      "en": "bread",
+      "vi": "bánh mì",
+      "hintVi": "Thực phẩm, phổ biến ở Việt Nam",
+      "hintEn": "Food, popular in Vietnam"
+    },
+    {
+      "en": "tofu",
+      "vi": "đậu hũ",
+      "hintVi": "Thực phẩm, xuất phát từ Trung Quốc",
+      "hintEn": "Food, comes from China"
+    },
+    {
+      "en": "knife",
+      "vi": "con dao",
+      "hintVi": "Dụng cụ bếp",
+      "hintEn": "Kitchen tools"
+    },
+    {
+      "en": "smoothie",
+      "vi": "sinh tố",
+      "hintVi": "Thức uống, nhuyễn",
+      "hintEn": "Drinks, puree"
+    },
+    {
+      "en": "chopsticks",
+      "vi": "đôi đũa",
+      "hintVi": "Dụng cụ bếp, dài, thon",
+      "hintEn": "Kitchen tools, long, slim"
+    },
+    {
+      "en": "chicken",
+      "vi": "thịt gà",
+      "hintVi": "Thực phẩm, phổ biến",
+      "hintEn": "Food, popular"
+    },
+    {
+      "en": "mango",
+      "vi": "trái xoài",
+      "hintVi": "Trái cây, màu vàng",
+      "hintEn": "Fruit, yellow"
+    },
+    {
+      "en": "kettle",
+      "vi": "ấm đun nước",
+      "hintVi": "Dụng cụ bếp, một nhiệm vụ nhất định",
+      "hintEn": "Kitchen tools, a certain task"
     }
   ],
   "nouns": [
     {
-      "en": "kitten",
-      "vi": "mèo con",
-      "hintVi": "Danh từ nhà",
-      "hintEn": "Raised in the house"
+      "en": "cashier",
+      "vi": "thu ngân",
+      "hintVi": "Một công việc liên quan tới tiền",
+      "hintEn": "A job related to money"
     },
     {
-      "en": "mole",
-      "vi": "chuột chũi",
-      "hintVi": "Danh từ nhấm",
-      "hintEn": "Rodent set"
+      "en": "flood",
+      "vi": "lũ lụt",
+      "hintVi": "Mưa lớn",
+      "hintEn": "Heavy rain"
     },
     {
-      "en": "skunk",
-      "vi": "chồn hôi",
-      "hintVi": "Danh từ đêm, hôi",
-      "hintEn": "Nightlife, smelly"
+      "en": "broom",
+      "vi": "cái chổi",
+      "hintVi": "Đồ vật trong nhà",
+      "hintEn": "Housewares"
     },
     {
-      "en": "ant",
-      "vi": "kiến",
-      "hintVi": "Danh từ",
-      "hintEn": "Insect"
+      "en": "scarecrow",
+      "vi": "bù nhìn",
+      "hintVi": "Ngoài đồng, dùng để hù dọa",
+      "hintEn": "In the field, used to scare"
     },
     {
-      "en": "gaur",
-      "vi": "bò tót",
-      "hintVi": "Danh từ chiến",
-      "hintEn": "Big, brutal"
+      "en": "gem",
+      "vi": "đá quý",
+      "hintVi": "Sặc sỡ, đắt tiền, nhiều hình dạng",
+      "hintEn": "Colorful, expensive, many shapes"
+    },
+    {
+      "en": "game",
+      "vi": "trò chơi",
+      "hintVi": "Giải trí, nhiều thể loại",
+      "hintEn": "Entertainment, many kind"
+    },
+    {
+      "en": "phone charger",
+      "vi": "sạc điện thoại",
+      "hintVi": "Vật dụng sử dụng điện, xài khi cần thiết",
+      "hintEn": "Items using electricity, used when needed"
+    },
+    {
+      "en": "cowboy",
+      "vi": "cao bồi",
+      "hintVi": "Con người, đội mũ",
+      "hintEn": "Human, wearing a hat"
+    },
+    {
+      "en": "fisher",
+      "vi": "người đánh cá",
+      "hintVi": "Nghề nghiệp, biển",
+      "hintEn": "Occupation, sea"
+    },
+    {
+      "en": "lawyer",
+      "vi": "luật sư",
+      "hintVi": "Biện hộ",
+      "hintEn": "Advocate"
+    },
+    {
+      "en": "razor",
+      "vi": "dao cạo",
+      "hintVi": "Vật dụng cá nhân, mỏng, làm bằng sắt",
+      "hintEn": "Personal items, thin, made of iron"
+    },
+    {
+      "en": "sense",
+      "vi": "giác quan",
+      "hintVi": "Liên quan đến con người, bao gồm 5 hoặc 6",
+      "hintEn": "Relating to humans, including 5 or 6"
+    },
+    {
+      "en": "candle",
+      "vi": "nến",
+      "hintVi": "Tỏa hương, phát sáng",
+      "hintEn": "Perfumed, glow"
+    },
+    {
+      "en": "customer",
+      "vi": "khách hàng",
+      "hintVi": "Con người, cho đi để nhận lại",
+      "hintEn": "Human, give to receive"
+    },
+    {
+      "en": "mouse",
+      "vi": "con chuột",
+      "hintVi": "Động vật, sống trong nhà",
+      "hintEn": "Animals, living in the house"
+    },
+    {
+      "en": "watch",
+      "vi": "đồng hồ",
+      "hintVi": "Vật dụng cá nhân",
+      "hintEn": "Personal item"
+    },
+    {
+      "en": "motor",
+      "vi": "động cơ",
+      "hintVi": "Một bộ phận của máy",
+      "hintEn": "Part of a machine"
+    },
+    {
+      "en": "headache",
+      "vi": "đau đầu",
+      "hintVi": "Một triệu chứng phổ biến",
+      "hintEn": "A common symptom"
+    },
+    {
+      "en": "library",
+      "vi": "thư viện",
+      "hintVi": "Một địa điểm, yên tĩnh",
+      "hintEn": "A place, quiet"
+    },
+    {
+      "en": "hospital",
+      "vi": "bệnh viện",
+      "hintVi": "Một địa điểm, không mong muốn đến",
+      "hintEn": "A place, not expected to go to"
+    },
+    {
+      "en": "waterfall",
+      "vi": "thác nước",
+      "hintVi": "Thuộc về thiên nhiên, cao",
+      "hintEn": "Belongs to nature, high"
+    },
+    {
+      "en": "vehicle",
+      "vi": "phương tiện",
+      "hintVi": "Dùng để di chuyển",
+      "hintEn": "Used to move"
+    },
+    {
+      "en": "museum",
+      "vi": "viện bảo tàng",
+      "hintVi": "Một địa điểm, trưng bày",
+      "hintEn": "A place, display"
+    },
+    {
+      "en": "waist",
+      "vi": "thắt lưng",
+      "hintVi": "Vật dụng cá nhân, dài",
+      "hintEn": "Personal item, long"
+    },
+    {
+      "en": "mask",
+      "vi": "khẩu trang",
+      "hintVi": "Vật dụng cá nhân, phổ biến ở Việt Nam",
+      "hintEn": "Personal item, popular in Vietnam"
+    },
+    {
+      "en": "pickaxe",
+      "vi": "cái cuốc",
+      "hintVi": "Công cụ, phổ biến ở vùng nông",
+      "hintEn": "Tools, common in the countryside"
+    },
+    {
+      "en": "bell",
+      "vi": "chuông",
+      "hintVi": "Một vật phát ra âm thanh",
+      "hintEn": "An object that makes a sound"
+    },
+    {
+      "en": "beetle",
+      "vi": "bọ hung",
+      "hintVi": "Côn trùng, vỏ cứng",
+      "hintEn": "Insect, hard skin"
+    },
+    {
+      "en": "bow",
+      "vi": "cung",
+      "hintVi": "Làm bằng gỗ, hình bán nguyệt",
+      "hintEn": "Made of wood, semicircle shape"
+    },
+    {
+      "en": "tank",
+      "vi": "xe tăng",
+      "hintVi": "Dùng trong quân sự",
+      "hintEn": "Used in the military"
+    },
+    {
+      "en": "dragon",
+      "vi": "con rồng",
+      "hintVi": "Truyền thuyết",
+      "hintEn": "Legendary"
+    },
+    {
+      "en": "unicycle",
+      "vi": "xe đạp một bánh",
+      "hintVi": "Dùng trong rạp xiếc",
+      "hintEn": "Used in the circus"
+    },
+    {
+      "en": "shield",
+      "vi": "cái khiên",
+      "hintVi": "Chiến tranh thời trung cổ",
+      "hintEn": "Medieval War"
+    },
+    {
+      "en": "heel",
+      "vi": "gót chân",
+      "hintVi": "Bộ phận con người, bao gồm 1 cặp",
+      "hintEn": "Human parts, including 1 pair"
+    },
+    {
+      "en": "camera",
+      "vi": "máy ảnh",
+      "hintVi": "Lưu trữ kỉ niệm",
+      "hintEn": "Store memories"
+    },
+    {
+      "en": "toothbrush",
+      "vi": "bàn chải đánh răng",
+      "hintVi": "Vật dụng cá nhân, dùng 1/2 lần mỗi ngày",
+      "hintEn": "Personal item, used 1/2 times per day"
+    },
+    {
+      "en": "bicycle",
+      "vi": "xe đạp",
+      "hintVi": "Phương tiện di chuyển",
+      "hintEn": "Transport"
+    },
+    {
+      "en": "lizard",
+      "vi": "con thằn lằn",
+      "hintVi": "Động vật, sống trong nhà",
+      "hintEn": "Animals, living in the house"
+    },
+    {
+      "en": "diamond",
+      "vi": "kim cương",
+      "hintVi": "Cacbon",
+      "hintEn": "Cacbon"
+    },
+    {
+      "en": "actor",
+      "vi": "diễn viên",
+      "hintVi": "Nghề nghiệp, nổi tiếng",
+      "hintEn": "Occupation, famous"
+    },
+    {
+      "en": "bank",
+      "vi": "ngân hàng",
+      "hintVi": "Một địa điểm liên quan tới tiền",
+      "hintEn": "A place related to money"
+    },
+    {
+      "en": "drum",
+      "vi": "trống",
+      "hintVi": "Đồ vật phát ra tiếng",
+      "hintEn": "Objects that make a sound"
+    },
+    {
+      "en": "broom",
+      "vi": "cái chổi",
+      "hintVi": "Đồ vật trong nhà",
+      "hintEn": "Housewares"
+    },
+    {
+      "en": "plane",
+      "vi": "máy bay",
+      "hintVi": "Phương tiện di chuyển",
+      "hintEn": "Transport"
+    },
+    {
+      "en": "fireman",
+      "vi": "lính cứu hỏa",
+      "hintVi": "Nghề nghiệp, xe chuyên dụng",
+      "hintEn": "Occupation, specialized vehicles"
+    },
+    {
+      "en": "wallet",
+      "vi": "ví tiền",
+      "hintVi": "Vật dụng cá nhân, nhỏ vừa túi",
+      "hintEn": "Personal items, small enough to fit in your pocket"
+    },
+    {
+      "en": "cannon",
+      "vi": "đại bác",
+      "hintVi": "Thuốc nổ",
+      "hintEn": "Gunpowder"
+    },
+    {
+      "en": "prison",
+      "vi": "nhà tù",
+      "hintVi": "Một địa điểm, mang đồng phục",
+      "hintEn": "A place, wear uniform"
+    },
+    {
+      "en": "scarf",
+      "vi": "khăn quàng cổ",
+      "hintVi": "Vật dụng cá nhân, dùng vào mùa lạnh",
+      "hintEn": "Personal item, use in cold season"
+    },
+    {
+      "en": "dinosaur",
+      "vi": "khủng long",
+      "hintVi": "Động vật, tuyệt chủng",
+      "hintEn": "Animals, extinct"
     }
   ],
   "characters": [
