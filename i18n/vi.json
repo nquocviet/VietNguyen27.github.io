@@ -12,6 +12,10 @@
     "nouns": "Danh từ",
     "characters": "Nhân vật"
   },
+  "level": {
+    "easy": "Dễ",
+    "hard": "Khó"
+  },
   "result": {
     "score": "Điểm số",
     "correct": "Đúng",
