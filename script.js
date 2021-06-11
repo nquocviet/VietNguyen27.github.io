@@ -38,8 +38,12 @@ const countdownMinute = document.getElementById('countdown-minute');
 const countdownSecond = document.getElementById('countdown-second');
 const secondContainer = document.querySelector('.second-container');
 const stopwatchSecond = document.querySelector('.stopwatch-second');
+const correctEl = document.querySelector('.correct-count');
+const wrongEl = document.querySelector('.wrong-count');
 let countdown = 120 * 1000;
 let secondCount = 2;
+let correct = 0;
+let wrong = 0;
 
 const figureParts = document.querySelectorAll('.figure-part');
 let isStart = JSON.parse(sessionStorage.getItem('isStart')) || false;
@@ -166,6 +170,9 @@ chooseLanguage.addEventListener('submit', async function (e) {
   this.parentElement.classList.remove('show');
   hangmanContainer.classList.add('show');
 
+  correct = 0;
+  wrong = 0;
+
   words = await fetchData();
   selectedWord = words[Math.floor(Math.random() * words.length)];
   playNewGame();
@@ -199,12 +206,14 @@ const displayWord = () => {
   const innerWord = wordEl.innerText.replace(/\n/g, '');
 
   if (innerWord === hiddenWord) {
+    correct++;
     showPopup(true);
   }
 };
 
 const displayWrongWord = () => {
   if (wrongLetters.length === figureParts.length) {
+    wrong++;
     showPopup(false);
   }
 
@@ -226,13 +235,19 @@ const displayWrongWord = () => {
 };
 
 const displayHint = () => {
-  const hintDisplay = selectedWord[language === 'en' ? 'hintEn' : 'hintVi'];
+  const hintDisplay =
+    selectedWord[languageSelected === 'en' ? 'hintEn' : 'hintVi'];
   hintEl.textContent = hintDisplay;
 };
 
+const displayScore = () => {
+  correctEl.textContent = correct;
+  wrongEl.textContent = wrong;
+};
+
 const showPopup = (winning) => {
-  const correctWord = selectedWord[language];
-  const wordMeaning = selectedWord[language === 'en' ? 'vi' : 'en'];
+  const correctWord = selectedWord[languageSelected];
+  const wordMeaning = selectedWord[languageSelected === 'en' ? 'vi' : 'en'];
   correctWordEl.textContent = correctWord;
   wordMeaningEl.textContent = wordMeaning;
 
@@ -266,6 +281,7 @@ const playNewGame = () => {
   displayWord();
   displayWrongWord();
   displayHint();
+  displayScore();
 };
 
 const countdownTimer = setInterval(function () {

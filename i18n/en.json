@@ -12,6 +12,11 @@
     "nouns": "Nouns",
     "characters": "Characters"
   },
+  "result": {
+    "score": "Score",
+    "correct": "Correct",
+    "wrong": "Wrong"
+  },
   "hint": "Hint:",
   "correctWord": "Correct word:",
   "meaning": "Meaning in Vietnamese:",
