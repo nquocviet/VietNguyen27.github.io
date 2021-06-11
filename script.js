@@ -167,11 +167,12 @@ chooseLanguage.addEventListener('submit', async function (e) {
   hangmanContainer.classList.add('show');
 
   words = await fetchData();
+  selectedWord = words[Math.floor(Math.random() * words.length)];
   playNewGame();
 });
 
 const displayWord = () => {
-  const wordDisplay = selectedWord[language];
+  const wordDisplay = selectedWord[languageSelected];
 
   wordEl.innerHTML = `
     ${convertWord(wordDisplay)
@@ -333,7 +334,5 @@ changeOptionsBtn.addEventListener('click', function () {
 });
 
 if (isStart) {
-  displayWord();
-  displayWrongWord();
-  displayHint();
+  playNewGame();
 }
