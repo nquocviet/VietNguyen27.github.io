@@ -12,6 +12,10 @@
     "nouns": "Nouns",
     "characters": "Characters"
   },
+  "level": {
+    "easy": "Easy",
+    "hard": "Hard"
+  },
   "result": {
     "score": "Score",
     "correct": "Correct",
