@@ -270,9 +270,10 @@ body {
 .hangman-title {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 .hangman-title span {
@@ -284,6 +285,38 @@ body {
   text-transform: capitalize;
   font-weight: 500;
   font-size: calc(1.5rem + 1vw);
+}
+
+.hangman-title ~ p {
+  text-align: center;
+}
+
+.score-container {
+  text-align: center;
+  padding-top: 15px;
+  margin: auto;
+}
+
+.score-container h3 {
+  font-size: calc(1rem + 0.7vw);
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.score-container .score-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-container .score-item p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.score-container .score-item span {
+  font-size: calc(2rem + 0.5vw);
 }
 
 .game-container {
@@ -453,7 +486,7 @@ body {
   }
 
   .widget-container {
-    padding: 15px;
+    padding: 10px 15px;
   }
 
   .choose-language form {
@@ -467,6 +500,7 @@ body {
 
   .hangman-container {
     margin-top: -20px;
+    padding-top: 30px;
   }
 
   .hangman-container > p {
@@ -478,7 +512,7 @@ body {
   }
 
   .game-container {
-    padding: 20px 5px;
+    padding: 10px 5px;
     height: 380px;
     width: 300px;
   }
@@ -499,7 +533,7 @@ body {
   }
 
   .word {
-    bottom: -30px;
+    bottom: -15px;
   }
 
   .letter {
