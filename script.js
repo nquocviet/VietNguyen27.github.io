@@ -34,6 +34,7 @@ const messageLose = document.getElementById('message-lose');
 const correctWordEl = document.getElementById('correct-word');
 const wordMeaningEl = document.getElementById('word-meaning');
 const changeOptionsBtn = document.getElementById('change-options');
+const changeLevelBtn = document.getElementById('change-level');
 const countdownMinute = document.getElementById('countdown-minute');
 const countdownSecond = document.getElementById('countdown-second');
 const secondContainer = document.querySelector('.second-container');
@@ -347,6 +348,10 @@ playAgainBtn.addEventListener('click', function () {
 changeOptionsBtn.addEventListener('click', function () {
   chooseLanguage.parentElement.classList.add('show');
   sessionStorage.removeItem('isStart');
+});
+
+changeLevelBtn.addEventListener('change', function () {
+  hintEl.parentElement.classList.toggle('hidden');
 });
 
 if (isStart) {
