@@ -352,6 +352,7 @@ changeOptionsBtn.addEventListener('click', function () {
 
 changeLevelBtn.addEventListener('change', function () {
   hintEl.parentElement.classList.toggle('hidden');
+  playNewGame();
 });
 
 if (isStart) {
